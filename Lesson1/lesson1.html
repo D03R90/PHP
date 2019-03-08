@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+	<p>$a = 5;</p>
+	<p>$b = '05';</p>
+
+	<p>var_dump ( $a == $b ); // Почему true? </p>
+	<p><b>(Одинаковый тип переменных, строка b была преобразована к числу)</b></p>
+<br><br>
+	<p>var_dump (( int ) '012345' ); // Почему 12345?</p>
+	<p><b>(Integer приводит к целому числу)</b></p>
+<br><br>
+	<p>var_dump (( float ) 123.0 === ( int ) 123.0 ); // Почему false? </p>
+	<p><b>(Разный тип переменных)</b></p>
+<br><br>
+	<p>var_dump (( int ) 0 === ( int ) 'hello, world' ); // Почему true?</p>
+	<p><b>(Неявное преобразование типов, чтобы сравнить два разных типа, нужно один привести к другому. )</b></p>
+</body>
+</html>
